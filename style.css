@@ -75,7 +75,7 @@ p,li{
 }
 /* Team Styling */
 .team{
-    background:var(--secondary-clr);
+    background:var(--white);
     padding:12vh 20px 150px 20px;
 }
 .team h2{
