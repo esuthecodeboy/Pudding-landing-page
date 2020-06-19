@@ -289,7 +289,7 @@ a:nth-child(4){
         width:60%;
     }
     team{
-        margin-top:10px;
+        padding-top:10px;
     }
 }
 @media screen and (min-width:760px) and (max-width:886px){
