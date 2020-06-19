@@ -406,6 +406,12 @@ a:nth-child(4){
         margin:20px auto 0 auto;
         width:10rem;
     }
+     input[type=email]{
+        width:20rem;
+    }
+    .newsletter h2{
+        font-size:var(--mdm-fnt);
+    }
     .footer-1,
     .footer-2,
     .footer-3,
