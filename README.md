@@ -1,3 +1,3 @@
 # Pudding landing page
 
-![Design preview for the Pudding landing](./Images/design-preview.jpg)
+![Design preview for the Pudding landing](./images/design-preview.jpg)
