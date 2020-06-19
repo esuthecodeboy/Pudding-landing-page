@@ -1,0 +1,444 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+    /* border:.5px solid yellow; */
+}
+:root{
+    --primary-clr:#fef297;
+    --secondary-clr:#000;
+    --white:#fff;
+    --max-font:3.5rem;
+    --mdm-fnt:1.3rem;
+    --sml-fnt:1.1rem;
+    --min-font:1rem;
+    --team-font:3rem;
+    --primary-font: 'Piedra', cursive;
+    --secondary-font:'Poppins', sans-serif;
+    --special:'Fredericka the Great', cursive;
+    --input-font:Consolas, serif;
+    --normal:400;
+    --bold:500;
+    --bolder:700;
+    --span-font:'Special Elite', cursive;
+    
+}
+h1,h2,h3,p,li{
+    color:var(--primary-clr);
+}
+h1,h2{
+    font-family: var(--primary-font);
+}
+h3,h4{
+    font-family:var(--special);
+}
+p,li{
+    font-family: var(--secondary-font);
+}
+#header{
+   background-image: url(./Images/Pudding.jpg);
+  background-position:200px center;
+  background-size:cover;
+  background-repeat:repeat;
+  height:100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  padding-left:70px;
+}
+.header-text{
+    width:55%;
+}
+.header-text h2{
+    font-family:var(--primary-font);
+    font-weight:var(--bold);
+    font-size: var(--max-font);
+}
+.header-text p{
+    font-family:var(--secondary-font);
+    font-size:var(--mdm-fnt);
+    font-weight:var(--normal);
+}
+.header-text button{
+    border:none;
+    background-color:var(--primary-clr);
+    color:var(--secondary-clr);
+    padding:.6rem 2rem;
+    font-size:var(--min-font);
+    font-family:var(--secondary-font);
+    font-weight: var(--bolder);
+    border-radius: 3px;
+    cursor:pointer;
+}
+.header-text p,
+.header-text button{
+    margin-top:20px;
+}
+/* Team Styling */
+.team{
+    background:var(--secondary-clr);
+    padding:12vh 20px 150px 20px;
+    border:1px solid red;
+}
+.team h2{
+    text-align:center;
+    font-size:var(--team-font);
+}
+.team-images{
+    margin-top:70px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    text-align:center;
+}
+.team-image-1,
+.team-image-2,
+.team-image-3{
+    width:30%;
+}
+.whiskers,
+.purry,
+.jiggles{
+    max-width:200px;
+    max-height:200px;
+    min-width:100px;
+    min-width: auto;
+    border-radius: 50%;
+    transition: transform 250ms ease-in,
+                filter 150ms ease-in-out;
+}
+.whiskers:hover,
+.purry:hover,
+.jiggles:hover{
+    transform: scale(1.2);
+}
+.team-images img:hover{
+    filter: contrast(120%);
+    filter: brightness(120%);
+}
+.team-image-text{
+    text-align: center;
+    margin-top:20px;
+    font-family: var(--primary-font);
+    font-size: var(--sml-fnt);
+}
+.team-image-text p{
+    margin-top:10px;
+    font-family: var(--secondary-font);
+}
+.newsletter{
+    background-color:var(--primary-clr);
+    padding:70px 20px;
+    color:var(--secondary-clr);
+    margin:auto;
+    text-align: center;
+}
+.newsletter h2{
+    color:var(--secondary-clr);
+    font-size:2.2rem;
+}
+input[type=email]{
+    width:16rem;
+    height: 2.5rem;
+    margin-top:20px;
+    border:none;
+    text-align:center;
+    font-family:var(--input-font);
+    color:var(--secondary-clr);
+    font-weight:var(--bold);
+    font-size:var(--sml-fnt);
+    border:2px solid var(--white);
+    transition: 500ms ease;
+    background-color: var(--white);
+    outline:none;
+}
+input[type=email]:focus {
+    border: 2px solid #555;
+  }
+::placeholder{
+    font-family:var(--input-font);
+    color:var(--secondary-clr);
+    font-weight:var(--bold);
+    font-size:var(--mdm-fnt);
+    text-align: center;
+}
+.newsletter button{
+    width:8rem;
+    height: 2.5rem;
+    text-align:center;
+    font-family:var(--input-font);
+    color:var(--primary-clr);
+    font-weight:var(--bolder);
+    font-size:var(--sml-fnt);
+    background-color: var(--secondary-clr);
+    border:none;
+    margin-left:-4.5px;
+    cursor: pointer;
+    transition:350ms;
+}
+.newsletter button:hover{
+    color:var(--secondary-clr);
+    background-color:var(--primary-clr);
+    border:2px solid var(--secondary-clr);
+}
+footer{
+    background-color: var(--secondary-clr);
+    padding:70px 50px 50px 50px;
+}
+.footer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+footer h4{
+    font-size:var(--mdm-fnt);
+    color:var(--primary-clr);
+    margin-bottom: 20px;
+    font-weight: var(--bolder);
+}
+.footer a{
+    display:block;
+    text-decoration:none;
+    font-size:var(--min-font);
+    font-family:var(--secondary-font);
+    color:var(--primary-clr);
+}
+.shipping::before,
+.contact::before,
+.facebook::before,
+.twitter::before,
+.states::before,
+.europe::before,
+.asia::before,
+.toys::before,
+.treats::before,
+.sales::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight:900;
+    margin-right:8px;
+}
+.shipping::before{
+    content:'\f48b';
+}
+.contact::before{
+    content:'\f2bb';
+}
+.fa-redo{
+    margin-right:8px;
+}
+.facebook::before{
+    content:'\f082';
+    font-weight:400;
+    font-family: 'Font Awesome 5 Brands';
+}
+.twitter::before{
+    content:'\f099';
+    font-family: 'Font Awesome 5 Brands';
+}
+.fa-instagram{
+    font-weight:900;
+    margin-right:8px;
+}
+.states::before{
+    content:'\f74d';
+}
+.europe::before{
+    content:'\f7a2';
+}
+.asia::before{
+    content:'\f57e';
+}
+.toys::before{
+    content:'\f11b';
+}
+.treats::before{
+    content:'\f564';
+}
+.sales::before{
+    font-family: 'Font Awesome 5 Brands';
+    content:'\f83b';
+}
+footer p:nth-child(3),
+footer p:nth-child(4),
+a:nth-child(3),
+a:nth-child(4){
+    padding-top:15px;
+}
+.appreciation{
+    text-align:center;
+    margin-top:50px;
+    font-family:var(--span-font);
+    font-size:var(--mdm-fnt);
+}
+.appreciation a{
+    text-decoration:none;
+}
+.appreciation span{
+    color:White;
+}
+@media screen and (max-width:800px){
+    .team-image-1,
+    .team-image-2{
+        width:40%;
+    }
+    .team-image-3{
+        width:100%;
+        margin-top:70px;
+    }
+}
+@media screen and (max-width:960px){
+    .header-text{
+        width:60%;
+    }
+}
+@media screen and (min-width:760px) and (max-width:886px){
+    .header-text{
+        width:70%;
+    }
+}
+@media screen and (max-width:760px){
+    .header-text{
+        width:80%;
+    }
+}
+@media screen and (max-width:750px){
+    .footer{
+        text-align:center;
+    }
+    .footer-1,
+    .footer-2,
+    .footer-3,
+    .footer-4{
+        width:40%;
+    }
+    .footer-3,
+    .footer-4{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:730px){
+    #header{
+        background-position:50px center;
+    }
+    .header-text{
+        width:72%;
+    }
+    .header-text h2{
+        font-size:3rem;
+    }
+}
+@media screen and (max-width:660px){
+    .header-text{
+        width:90%;
+    }   
+}
+@media screen and (max-width:680px){
+    .team-image-1,
+    .team-image-2{
+        width:100%;
+    }
+    .team-image-2{
+        margin-top:75px;
+    }
+}
+@media screen and (max-width:600px){
+    #header{
+        background-position:10px center;
+        padding:0 30px;
+    }
+    .header-text{
+        width:80%;
+    }
+}
+@media screen and (max-width:590px){
+    .header-text{
+        width:100%;
+    }
+}
+@media screen and (max-width:520px){
+    #header{
+        background-position:12% center;
+        /* padding-left:0px; */
+    }
+    .header-text{
+        width:80%;
+    }
+}
+@media screen and (min-width:424px) and (max-width:518px){
+    .header-text{
+        width:65%;
+    }
+}
+@media screen and (max-width:380px){
+    #header{
+        background-position:20% center;
+    }
+    .team h2{
+        font-size:2.2rem;
+    }
+}
+@media screen and (max-width:320px){
+    #header{
+        background-position:30% center;
+        padding-left:20px;
+        justify-content:center;
+    }
+    .header-text{
+        width:100%;
+        text-align:left;
+    }
+    .header-text h4{
+        font-size:2.5rem;
+    }
+    .team{
+        padding:20px 0 70px 0;
+    }
+    .team h2{
+        font-size:2.5rem;
+    }
+    .newsletter h2{
+        font-size:1.5rem;
+        text-align:center;
+    }
+}
+@media screen and (max-width:500px){
+    .newsletter button{
+        display:block;
+        justify-content:center;
+        margin:20px auto 0 auto;
+        width:10rem;
+    }
+    .footer-1,
+    .footer-2,
+    .footer-3,
+    .footer-4{
+        width:100%;
+    }
+    .footer-2,
+    .footer-3,
+    .footer-4{
+        margin-top:50px;
+    }
+}
+@media screen and (max-width:450px){
+    .appreciation{
+        font-size: var(--min-font);
+    }
+}
+@media screen and (max-width:350px){
+    .whiskers,
+    .purry,
+    .jiggles{
+        width:150px;
+        height:150px;
+    }
+    input[type=email]{
+        width:80%;
+        height: 2.5rem;
+    }
+    .newsletter button{
+        width:45%;
+        height: 2.5rem;
+    }
+}
